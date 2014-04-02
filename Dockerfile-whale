@@ -1,0 +1,9 @@
+# Whale you be my container?
+
+FROM ubuntu
+
+MAINTAINER Dinshaw Gobhai
+
+ENTRYPOINT ["echo", "Whale you be my container?"]
+
+# docker run whale

@@ -1,0 +1,4 @@
+FROM mguymon/torquebox
+RUN apt-get update & apt-get install curl -y
+RUN curl -o /opt/torquebox/current/jboss/standalone/deployments/contacts-core.knob http://p2-qanex101.ad.prodcc.net/content/repositories/release/com/constantcontact/contacts/core/contacts-core/1.0.0.0-SNAPSHOT/contacts-core-1.0.0.0-20131018.235432-40.knob
+CMD ["/opt/torquebox/start_torquebox.sh"]
